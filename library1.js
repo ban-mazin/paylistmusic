@@ -60,6 +60,12 @@ const printPlaylist = function(playlistId) {
 
 // adds an existing track to an existing playlist
 const addTrackToPlaylist = function(trackId, playlistId) {
+  if (this.tracks[trackId]) {
+    if (this.playlists[playlistId]) {
+      this.playlists[playlistId].tracks.push(trackId);
+      console.log(this.playlists[playlistId.tracks])
+    }
+  }
 
 }
 
